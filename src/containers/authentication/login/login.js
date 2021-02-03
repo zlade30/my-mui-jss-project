@@ -2,12 +2,14 @@ import React from 'react'
 import {
   Box,
   Button,
+  CardMedia,
   TextField,
   Typography,
   InputAdornment,
 } from '@material-ui/core'
 import { AccountCircle, Lock } from '@material-ui/icons'
 import { loginStyle } from './loginStyle'
+import imageBgUrl from '../../../shared/assets/images/studying.jpg'
 
 const Login = () => {
   const classess = loginStyle()
@@ -56,8 +58,20 @@ const Login = () => {
         <Typography className={classess.title} variant="subtitle1" gutterBottom>
           Forgot password?
         </Typography>
+        <Typography className={classess.title} variant="body1" gutterBottom>
+          or
+        </Typography>
+        <Typography className={classess.title} variant="subtitle1" gutterBottom>
+          Create an account
+        </Typography>
       </Box>
-      <Box className={classess.rightPanel} />
+      <Box className={classess.rightPanel}>
+        <CardMedia
+          component="img"
+          image={imageBgUrl}
+          className={classess.image}
+        />
+      </Box>
     </Box>
   )
 }

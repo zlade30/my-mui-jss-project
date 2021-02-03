@@ -20,7 +20,11 @@ export const loginStyle = makeStyles((theme) => ({
   },
   rightPanel: {
     width: '50%',
+    display: 'flex',
     height: '100vh',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#f4f8fc',
   },
   form: {
     padding: 40,
@@ -39,5 +43,9 @@ export const loginStyle = makeStyles((theme) => ({
   },
   title: {
     color: '#6e6e6e',
+  },
+  image: {
+    width: 600,
+    height: 600,
   },
 }))

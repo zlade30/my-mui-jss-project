@@ -1,6 +1,6 @@
 import { lazy } from 'react'
 
-const Login = lazy(() => import('../../containers/authentication'))
+const Login = lazy(() => import('../../containers/authentication/login'))
 
 const Routes = [
   {
